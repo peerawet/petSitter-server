@@ -17,7 +17,7 @@ googleRouter.get("/", async (req, res) => {
   res.redirect(url);
 });
 
-googleRouter.get("/callback/", async (req, res) => {
+googleRouter.get("/callback", async (req, res) => {
   const code = req.query.code;
   console.log(code);
 
